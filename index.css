@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+*{
+    font-family: 'Jua', sans-serif;
+}
+html,body{
+    margin:0;
+    padding:0;
+    background: url(./cloud2.jpg) no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    padding:20px;
+    box-sizing: border-box;
+    position: sticky;
+    top:0;
+    transition: 0.5s;
+    background-color: rgba(85, 107, 47, 0.7);
+}
+.headerBColor{
+    background-color: darkolivegreen;
+}
+    .header{
+        display: inline-block;
+        transition: 0.5s;
+    }
+    .header:hover{
+        transform: scale(1.05);
+    }
+    .header a{
+        font-size: 3rem;
+        color: ghostwhite;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+        .header a:hover{
+            color: lightgreen;
+            font-weight: bold;
+        }
+    .menubar{
+        display: inline-block;
+    }
+        .menubar a{
+            padding: 20px;
+            color: ghostwhite;
+        }
+            .menubar a:hover{
+                color: darkgreen;
+            }
+article{
+    display: block;
+
+}
+.main{
+    text-align: center;
+    background: url(./cat.png) no-repeat;
+    background-position: center 25%, 90%;
+    background-size: 65%;
+    padding-top: 100px;
+    padding-bottom: 350px;
+}
+    .main div{
+        font-size: 5rem;
+    }
+    .main div span{
+        font-size: 2rem;
+    }
+
+#about{
+    background-color: rgb(240, 255, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+#about img{
+    display: inline-block;
+    width: 40%;
+    padding-left: 10%;
+}
+#about p{
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+}
+    #about p span{
+        font-size: 1.3rem;
+    }
+    #about p img{
+        width: 10%;
+        padding: 3%;
+    }
+#detail{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(240, 255, 249);
+    width: 100%;
+    height: 600px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+    #detail_img1{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: url(./cloud.jpg) no-repeat center;
+        background-size: cover;
+        color: black;
+    }
+    #detail_img1 span{
+        padding: 0;
+    }
+    #detail_img2{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: ghostwhite;
+        background: url(./aurora.jpg) no-repeat center;
+        background-size: cover;
+    }
+    
+#skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 255, 249);
+    height: 600px;
+}
+    #skill button{
+        width: 100px;
+        margin: 20px;
+        padding: 20px;
+        padding-top:30px;
+        padding-bottom: 30px;
+        border-radius: 50%;
+        border: 1px darkgreen solid;
+        background-color: rgb(240, 255, 249);
+        transition: 0.5s;
+    }
+        #skill button:hover{
+            transform: scale(1.1);
+            background-color: lightgreen;
+            color:darkgreen;
+        }
+    #skill_slide{
+        padding-inline-start: 0;
+        text-align: center;
+        list-style-type: none;
+        font-size: 0px;
+    }
+    .active{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+#benefit{
+    background-color: rgb(240, 255, 249);
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+#benefit h2{
+    margin:0;
+    margin-bottom: 3%;
+}
+#benefit div{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    width:100%;
+    grid-template-columns: repeat(4,20%);
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(240, 255, 249);
+}
+    footer p{
+        margin: 0;
+    }
