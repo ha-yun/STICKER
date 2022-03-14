@@ -5,7 +5,7 @@
 html,body{
     margin:0;
     padding:0;
-    background: url(./cloud2.jpg) no-repeat;
+    background: url(./img/cloud2.jpg) no-repeat;
     background-size: cover;
 }
 header{
@@ -50,13 +50,9 @@ header{
             .menubar a:hover{
                 color: darkgreen;
             }
-article{
-    display: block;
-
-}
 .main{
     text-align: center;
-    background: url(./cat.png) no-repeat;
+    background: url(./img/cat.png) no-repeat;
     background-position: center 25%, 90%;
     background-size: 65%;
     padding-top: 100px;
@@ -109,7 +105,7 @@ article{
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: url(./cloud.jpg) no-repeat center;
+        background: url(./img/cloud.jpg) no-repeat center;
         background-size: cover;
         color: black;
     }
@@ -121,7 +117,7 @@ article{
         align-items: center;
         justify-content: center;
         color: ghostwhite;
-        background: url(./aurora.jpg) no-repeat center;
+        background: url(./img/aurora.jpg) no-repeat center;
         background-size: cover;
     }
     
@@ -164,24 +160,30 @@ article{
     display: block;
     text-align: center;
     width: 100%;
-    height: 300px;
+    height: 400px;
+    padding-top: 50px;
 }
-#benefit h2{
-    margin:0;
-    margin-bottom: 3%;
-}
-#benefit div{
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    width:100%;
-    grid-template-columns: repeat(4,20%);
-}
+    #benefit h2{
+        margin:0;
+        margin-bottom: 3%;
+    }
+    #benefit div{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        width:100%;
+        grid-template-columns: repeat(4,20%);
+        font-size: 1.2rem;
+    }
 
 footer{
     text-align: center;
     background-color: rgb(240, 255, 249);
+    padding: 10px;
 }
     footer p{
         margin: 0;
     }
+
+
+/* responsive */

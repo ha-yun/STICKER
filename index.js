@@ -7,7 +7,7 @@ $(function(){
     var prevBtn
     var nextBtn
     var SkillList //슬라이드 li
-    var SkillSize
+    var SkillSize //슬라이드 li size
     var timer
     var currentIndex = 0; //슬라이드 인덱스
     var Skill
@@ -30,6 +30,7 @@ $(function(){
         Skill = $("#skill");
     }
 
+    // header
     function scrollHeader(){
         if($(window).scrollTop()>0){
             $header.removeClass('headerBColor')
@@ -39,16 +40,17 @@ $(function(){
         }
     }
 
+    // detail
     function ShowDetail(){
         $detail1.children("span").stop().slideDown(1000);
         $detail2.children("span").stop().slideDown(1000);
     }
-
     function HideDetail(){
         $detail1.children("span").stop().slideUp(500);
         $detail2.children("span").stop().slideUp(500);
     }
 
+    // event
     function Event(){
         $(window).on('scroll',scrollHeader);
         $detail.on('mouseenter',ShowDetail);
@@ -108,7 +110,4 @@ $(function(){
         }
         moveSlide(currentIndex)
     }
-
-
-    
 });
