@@ -68,6 +68,40 @@ header{
         font-size: 2rem;
     }
 
+#skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 255, 249);
+    height: 600px;
+}
+    #skill button{
+        margin: 70px;
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 50%;
+        border: 1px rgba(85, 107, 47, 0.7) solid;
+        background-color: ghostwhite;
+        transition: 0.3s;
+        font-size: 1.2rem;
+    }
+        #skill button:hover{
+            transform: scale(1.1);
+            background-color: rgba(85, 107, 47, 0.7);
+            color:ghostwhite;
+        }
+    #skill_slide{
+        padding-inline-start: 0;
+        text-align: center;
+        list-style-type: none;
+        font-size: 0px;
+    }
+    .active{
+        width: 100%;
+        font-size: 2rem;
+    }
+
 #about{
     background-color: rgb(240, 255, 249);
     display: flex;
@@ -124,40 +158,6 @@ header{
         background: url(./img/aurora.jpg) no-repeat center;
         background-size: cover;
     }
-    
-#skill{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(240, 255, 249);
-    height: 600px;
-}
-    #skill button{
-        margin: 70px;
-        padding: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        border-radius: 50%;
-        border: 1px rgba(85, 107, 47, 0.7) solid;
-        background-color: ghostwhite;
-        transition: 0.3s;
-        font-size: 1.2rem;
-    }
-        #skill button:hover{
-            transform: scale(1.1);
-            background-color: rgba(85, 107, 47, 0.7);
-            color:ghostwhite;
-        }
-    #skill_slide{
-        padding-inline-start: 0;
-        text-align: center;
-        list-style-type: none;
-        font-size: 0px;
-    }
-    .active{
-        width: 100%;
-        font-size: 2rem;
-    }
 
 #benefit{
     background-color: rgb(240, 255, 249);
@@ -201,6 +201,21 @@ footer{
 
 /* responsive */
 @media all and (max-width:1024px){
+    .header a{
+        font-size: 2.5rem;
+    }
+    .menubar a{
+        padding: 5%;
+        margin-left: 20%;
+        font-size: 1.3rem;
+    }
+    .main div{
+        font-size: 4rem;
+    }
+    .main div span{
+        font-size: 1.5rem;
+    }
+
     #skill button{
         margin: 20px;
         padding-top:30px;
@@ -253,17 +268,29 @@ footer{
         font-size: 2.5rem;
     }
     .menubar a{
-        padding: 5%;
-        margin-left: 7%;
+        padding: 3%;
+        color: ghostwhite;
         font-size: 1.3rem;
     }
-
     .main div{
         font-size: 3rem;
     }
     .main div span{
         font-size: 1.3rem;
     }
+    #skill button{
+        margin: 20px;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px darkgreen solid;
+        background-color: ghostwhite;
+        transition: 0.5s;
+        font-size: 1.1rem;
+    }
+        .active{
+            font-size: 1.5rem;
+        }
     #about{
         flex-direction: column;
         padding-top: 20%;
@@ -283,19 +310,6 @@ footer{
         font-size: 1.7rem;
         height: 800px;
     }
-    #skill button{
-        margin: 20px;
-        padding: 10px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border: 1px darkgreen solid;
-        background-color: ghostwhite;
-        transition: 0.5s;
-        font-size: 1.1rem;
-    }
-        .active{
-            font-size: 1.5rem;
-        }
 }
 
 @media all and (max-width:480px){
@@ -318,19 +332,7 @@ footer{
         .main div span{
             font-size: 1.5rem;
         }
-        #about img{
-            width: 40%;
-        }
-        #about p{
-            font-size: 1.6rem;
-        }
-            #about p span{
-                font-size: 1.1rem;
-            }
-    #detail{
-        font-size: 1.4rem;
-    }
-
+    
     #skill{
         display: flex;
         flex-direction: column;
@@ -353,5 +355,17 @@ footer{
             width: 100%;
             font-size: 1.3rem;
         }
-
+    
+        #about img{
+            width: 40%;
+        }
+        #about p{
+            font-size: 1.6rem;
+        }
+            #about p span{
+                font-size: 1.1rem;
+            }
+    #detail{
+        font-size: 1.4rem;
+    }
 }

@@ -114,11 +114,7 @@ $(function(){
     //Responsive menu
     $(window).resize(function(){
         var width = $(window).width();
-        if (width<480){
-            $("#menu").css({'display':'inline-block'});
-            $(".menubar").children('a').css({'display':'none'});
-        }
-        else if(width<768){
+        if (width<1024){
             $("#menu").css({'display':'inline-block'});
             $(".menubar").children('a').css({'display':'none'});
         }
