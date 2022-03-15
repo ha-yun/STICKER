@@ -129,6 +129,7 @@ $(function(){
         $(this).nextAll("a").slideUp();
         if ($(this).nextAll("a").is(':hidden')){
             $(this).nextAll("a").slideDown(1500);
+            $(".menubar").children('a').css({'display':'block'});
         }else{
             $(this).nextAll("a").slideUp();
         }
