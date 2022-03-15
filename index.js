@@ -110,4 +110,31 @@ $(function(){
         }
         moveSlide(currentIndex)
     }
+
+    //Responsive menu
+    $(window).resize(function(){
+        var width = $(window).width();
+        if (width<480){
+            $("#menu").css({'display':'inline-block'});
+            $(".menubar").children('a').css({'display':'none'});
+        }
+        else if(width<768){
+            $("#menu").css({'display':'inline-block'});
+            $(".menubar").children('a').css({'display':'none'});
+        }
+        else{
+            $("#menu").css({'display':'none'});
+            $(".menubar").children('a').css({'display':'inline-block'});
+        }
+    })
+    $(window).trigger("resize");
+
+    $("#menu").click(function(){
+        $(this).nextAll("a").slideUp();
+        if ($(this).nextAll("a").is(':hidden')){
+            $(this).nextAll("a").slideDown(1500);
+        }else{
+            $(this).nextAll("a").slideUp();
+        }
+    })
 });
