@@ -1,6 +1,5 @@
 $(function(){
     var $header
-    var $TitleA
     var $detail
     var $detail1
     var $detail2
@@ -22,7 +21,6 @@ $(function(){
 
     function Init(){
         $header = $("header");
-        $TitleA = $(".header").children('a');
         $detail = $("#detail");
         $detail1 = $("#detail_img1");
         $detail2 = $("#detail_img2");
