@@ -74,12 +74,15 @@ header{
     align-items: center;
     background-color: rgb(240, 255, 249);
     height: 600px;
+    padding: 5%;
+    
 }
+    #skill div{
+        width:10%;
+        text-align: center;
+    }
     #skill button{
-        margin: 70px;
-        padding: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 20%;
         border-radius: 50%;
         border: 1px rgba(85, 107, 47, 0.7) solid;
         background-color: ghostwhite;
@@ -100,6 +103,7 @@ header{
     .active{
         width: 100%;
         font-size: 2rem;
+
     }
 
 #about{
@@ -181,13 +185,21 @@ header{
     }
 
 footer{
-    text-align: center;
     background-color: rgb(240, 255, 249);
-    padding: 10px;
+    padding: 2%;
 }
-    footer p{
-        margin: 0;
-    }
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 5% 1% 5%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+}
+#footer a{
+    color:rgba(85, 107, 47, 0.9)
+}
 
 /* 모바일 메뉴창 */
 #menu{
@@ -205,8 +217,7 @@ footer{
         font-size: 2.5rem;
     }
     .menubar a{
-        padding: 5%;
-        margin-left: 20%;
+        padding: 2%;
         font-size: 1.3rem;
     }
     .main div{
@@ -217,9 +228,13 @@ footer{
     }
 
     #skill button{
-        margin: 20px;
-        padding-top:30px;
-        padding-bottom: 30px;
+        margin: 10px;
+        padding: 10px;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .active{
+        font-size: 1.8rem;
     }
     #about img{
         padding-left: 3%;
@@ -265,31 +280,44 @@ footer{
 
 @media all and (max-width:768px){
     .header a{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .menubar a{
+        font-size: 1.2rem;
+    }
+    .main{
+        background-size: 90%;
+        padding-top: 10%;
+        padding-bottom: 30%;
+    }
+        .main div{
+            font-size: 3rem;
+        }
+            .main div span{
+                font-size: 1.3rem;
+            }
+    
+    
+    #skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 500px;
         padding: 3%;
-        color: ghostwhite;
-        font-size: 1.3rem;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
-    .main div{
-        font-size: 3rem;
-    }
-    .main div span{
-        font-size: 1.3rem;
-    }
-    #skill button{
-        margin: 20px;
-        padding: 10px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border: 1px darkgreen solid;
-        background-color: ghostwhite;
-        transition: 0.5s;
-        font-size: 1.1rem;
-    }
+        #skill button{
+            padding: 15%;
+            border: 1px darkgreen solid;
+            background-color: ghostwhite;
+            transition: 0.5s;
+            font-size: 1rem;
+        }
         .active{
-            font-size: 1.5rem;
+            width: 100%;
+            font-size: 1.4rem;
         }
     #about{
         flex-direction: column;
@@ -301,14 +329,30 @@ footer{
             padding: 0;
         }
         #about p{
-            font-size: 2.5rem;
+            font-size: 2.3rem;
         }
             #about p span{
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
     #detail{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         height: 800px;
+    }
+    footer{
+        padding: 0;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 5%;
+        text-align: left;
+        font-size: 1rem;
+    }
+    .lorem{
+        font-size: 0.9rem;
+        margin-bottom: 5%;
     }
 }
 
@@ -317,14 +361,13 @@ footer{
         font-size: 1.7rem;
     }
     .menubar a{
-        padding: 5%;
-        margin-left: 15%;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .main{
         background-size: cover;
-        padding-bottom: 250px;
+        padding-top: 20%;
+        padding-bottom: 50%;
     }
         .main div{
             font-size: 3rem;
@@ -334,38 +377,44 @@ footer{
         }
     
     #skill{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         height: 350px;
-        padding: 3%;
-        padding-top: 20%;
-        padding-bottom: 20%;
     }
         #skill button{
             margin: 0px;
-            padding: 10px;
-            padding-top: 10px;
-            padding-bottom:10px;
             border-radius: 50%;
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
         .active{
-            width: 100%;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
-    
+
         #about img{
             width: 40%;
         }
         #about p{
-            font-size: 1.6rem;
+            font-size: 1.5rem;
         }
             #about p span{
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
     #detail{
-        font-size: 1.4rem;
+        font-size: 1rem;
+    }
+    
+    #benefit{
+        height: 450px;
+    }
+        #benefit div{
+            font-size: 1.2rem;
+        }
+            #benefit div img{
+                width:60%;
+            }
+
+    #footer{
+        font-size: 0.8rem;
+    }
+    .lorem{
+        font-size: 0.6rem;
     }
 }

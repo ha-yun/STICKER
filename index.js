@@ -63,10 +63,10 @@ $(function(){
 
     //자동 전환 슬라이드
     SkillList.eq(0).css({'opacity':1});
+    SkillList.eq(0).addClass("active");
 
     function moveSlide(index){
         SkillList.css({'opacity':0});
-
         SkillList.stop();
         SkillList.eq(index).stop().animate({'opacity':1}, 2000);
 
@@ -96,7 +96,7 @@ $(function(){
     }
 
     function SkillSlide(){ //슬라이드 자동 전환
-        timer = setInterval(NextSlide, 4000)
+        timer = setInterval(NextSlide, 3800)
     }
 
     function Stop(){
@@ -128,7 +128,7 @@ $(function(){
     $("#menu").click(function(){
         $(this).nextAll("a").slideUp();
         if ($(this).nextAll("a").is(':hidden')){
-            $(this).nextAll("a").slideDown(1500);
+            $(this).nextAll("a").slideDown(1000);
             $(".menubar").children('a').css({'display':'block'});
         }else{
             $(this).nextAll("a").slideUp();
