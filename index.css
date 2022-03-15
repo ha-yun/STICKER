@@ -15,11 +15,10 @@ header{
     align-items: center;
     justify-content: space-between;
     margin:0;
-    /* padding: 2.5%; */
+    padding: 1.5%;
     box-sizing: border-box;
     position: sticky;
     top:0;
-    transition: 0.5s;
     background-color: rgba(85, 107, 47, 0.7);
 }
 .headerBColor{
@@ -28,25 +27,24 @@ header{
     .header{
         display: inline-block;
         transition: 0.5s;
-        padding:0;
-        margin:0;
-        box-sizing: border-box;
     }
     .header:hover{
         transform: scale(1.05);
     }
     .header a{
+        color: ghostwhite;
+        text-decoration: none;
         transition: 0.5s;
     }
-    
-    .header img{
-        padding:0;
-        margin:0;
-        width: 90%;
-        opacity: 0.5;
+        .header a:hover{
+            color: lightgreen;
+            font-weight: bold;
+        }
+    .header a img{
+        width: 80%;
     }
-    .img_scroll{
-        opacity: 0.5;
+    .header a span{
+        font-size: 3rem;
     }
 
     .menubar{
@@ -232,7 +230,7 @@ footer{
 
 /* responsive */
 @media all and (max-width:1024px){
-    .header a{
+    .header a span{
         font-size: 2.5rem;
     }
     .menubar a{
@@ -289,7 +287,7 @@ footer{
 }
 
 @media all and (max-width:768px){
-    .header a{
+    .header a span{
         font-size: 1.8rem;
     }
     .menubar a{
@@ -365,7 +363,7 @@ footer{
 }
 
 @media all and (max-width:480px){
-    .header a{
+    .header a span{
         font-size: 1.7rem;
     }
     .menubar a{

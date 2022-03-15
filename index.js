@@ -1,6 +1,6 @@
 $(function(){
     var $header
-    var $TitleImg
+    var $TitleA
     var $detail
     var $detail1
     var $detail2
@@ -22,7 +22,7 @@ $(function(){
 
     function Init(){
         $header = $("header");
-        $TitleImg = $(".header").children('img');
+        $TitleA = $(".header").children('a');
         $detail = $("#detail");
         $detail1 = $("#detail_img1");
         $detail2 = $("#detail_img2");
@@ -37,11 +37,11 @@ $(function(){
     function scrollHeader(){
         if($(window).scrollTop()>0){
             $header.removeClass('headerBColor');
-            $TitleImg.removeClass('.img_scroll');
+            $TitleA.html('<span>Catch Ketch Sticker</span>');
         }
         else{
             $header.addClass('headerBColor');
-            $TitleImg.addClass('.img_scroll')
+            $TitleA.html('<img alt="Catch Ketch Sticker" src="./img/Title.png">');
         }
     }
 
