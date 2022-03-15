@@ -15,7 +15,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin:0;
-    padding: 2.5%;
+    /* padding: 2.5%; */
     box-sizing: border-box;
     position: sticky;
     top:0;
@@ -28,20 +28,27 @@ header{
     .header{
         display: inline-block;
         transition: 0.5s;
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
     }
     .header:hover{
         transform: scale(1.05);
     }
     .header a{
-        font-size: 3rem;
-        color: ghostwhite;
-        text-decoration: none;
         transition: 0.5s;
     }
-        .header a:hover{
-            color: lightgreen;
-            font-weight: bold;
-        }
+    
+    .header img{
+        padding:0;
+        margin:0;
+        width: 90%;
+        opacity: 0.5;
+    }
+    .img_scroll{
+        opacity: 0.5;
+    }
+
     .menubar{
         display: inline-block;
         width: 40%;

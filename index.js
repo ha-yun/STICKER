@@ -1,5 +1,6 @@
 $(function(){
     var $header
+    var $TitleImg
     var $detail
     var $detail1
     var $detail2
@@ -11,6 +12,7 @@ $(function(){
     var timer
     var currentIndex = 0; //슬라이드 인덱스
     var Skill
+    
 
     Init();
     scrollHeader();
@@ -20,6 +22,7 @@ $(function(){
 
     function Init(){
         $header = $("header");
+        $TitleImg = $(".header").children('img');
         $detail = $("#detail");
         $detail1 = $("#detail_img1");
         $detail2 = $("#detail_img2");
@@ -33,10 +36,12 @@ $(function(){
     // header
     function scrollHeader(){
         if($(window).scrollTop()>0){
-            $header.removeClass('headerBColor')
+            $header.removeClass('headerBColor');
+            $TitleImg.removeClass('.img_scroll');
         }
         else{
             $header.addClass('headerBColor');
+            $TitleImg.addClass('.img_scroll')
         }
     }
 
