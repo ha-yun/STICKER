@@ -37,11 +37,9 @@ $(function(){
     function scrollHeader(){
         if($(window).scrollTop()>0){
             $header.removeClass('headerBColor');
-            $TitleA.html('<span>Catch Ketch Sticker</span>');
         }
         else{
             $header.addClass('headerBColor');
-            $TitleA.html('<img alt="Catch Ketch Sticker" src="./img/Title.png">');
         }
     }
 
