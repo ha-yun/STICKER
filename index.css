@@ -8,12 +8,14 @@ html,body{
     background: url(./img/cloud2.jpg) no-repeat;
     background-size: cover;
 }
+
+/* header */
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin:0;
-    padding:20px;
+    padding: 2.5%;
     box-sizing: border-box;
     position: sticky;
     top:0;
@@ -53,13 +55,15 @@ header{
             .menubar a:hover{
                 color: darkgreen;
             }
+
+/* main */
 .main{
     text-align: center;
     background: url(./img/cat.png) no-repeat;
     background-position: center 25%, 90%;
-    background-size: 65%;
-    padding-top: 100px;
-    padding-bottom: 350px;
+    background-size: 80%;
+    padding-top: 10%;
+    padding-bottom: 30%;
 }
     .main div{
         font-size: 5rem;
@@ -68,14 +72,13 @@ header{
         font-size: 2rem;
     }
 
+/* skill */
 #skill{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(240, 255, 249);
-    height: 600px;
-    padding: 5%;
-    
+    padding: 25% 5% 25% 5%;
 }
     #skill div{
         width:10%;
@@ -106,6 +109,7 @@ header{
 
     }
 
+/* about */
 #about{
     background-color: rgb(240, 255, 249);
     display: flex;
@@ -132,6 +136,7 @@ header{
             padding: 3%;
         }
 
+/* detail */
 #detail{
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -139,9 +144,9 @@ header{
     text-align: center;
     background-color: rgb(240, 255, 249);
     width: 100%;
-    height: 600px;
     padding-top: 5%;
     padding-bottom: 5%;
+    height: 700px;
 }
     #detail_img1{
         display: inline-flex;
@@ -163,17 +168,18 @@ header{
         background-size: cover;
     }
 
+/* benefit */
 #benefit{
     background-color: rgb(240, 255, 249);
     display: block;
     text-align: center;
     width: 100%;
-    height: 400px;
-    padding-top: 50px;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
     #benefit h2{
         margin:0;
-        margin-bottom: 3%;
+        margin-bottom: 5%;
     }
     #benefit div{
         display: grid;
@@ -184,6 +190,7 @@ header{
         font-size: 1.5rem;
     }
 
+/* footer */
 footer{
     background-color: rgb(240, 255, 249);
     padding: 2%;
@@ -209,6 +216,11 @@ footer{
     border-radius: 30%;
     background-color: ghostwhite;
     margin-right: 3%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#menu:hover{
+    background-color: lightgreen;
 }
 
 /* responsive */
@@ -227,14 +239,8 @@ footer{
         font-size: 1.5rem;
     }
 
-    #skill button{
-        margin: 10px;
-        padding: 10px;
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
     .active{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     #about img{
         padding-left: 3%;
@@ -262,20 +268,17 @@ footer{
             padding: 0;
             margin:0;
         }
-    #benefit{
-        height: 600px;
+    #benefit div{
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+        font-size: 1.6rem;
     }
-        #benefit div{
-            grid-template-columns: repeat(2,50%);
-            grid-template-rows: repeat(2,50%);
-            font-size: 1.6rem;
+        #benefit div span{
+            margin-bottom: 5%;
         }
-            #benefit div span{
-                margin-bottom: 5%;
-            }
-            #benefit div img{
-                width:80%;
-            }
+        #benefit div img{
+            width:80%;
+        }
 }
 
 @media all and (max-width:768px){
@@ -296,23 +299,18 @@ footer{
             .main div span{
                 font-size: 1.3rem;
             }
-    
-    
     #skill{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 500px;
-        padding: 3%;
-        padding-top: 20%;
-        padding-bottom: 20%;
+        padding: 15% 3% 15% 3%;
+    }
+    #skill div{
+        padding : 10%;
     }
         #skill button{
-            padding: 15%;
-            border: 1px darkgreen solid;
-            background-color: ghostwhite;
-            transition: 0.5s;
+            padding: 20%;
             font-size: 1rem;
         }
         .active{
@@ -354,6 +352,9 @@ footer{
         font-size: 0.9rem;
         margin-bottom: 5%;
     }
+    #benefit div{
+        font-size: 1.4rem;
+    }
 }
 
 @media all and (max-width:480px){
@@ -375,37 +376,29 @@ footer{
         .main div span{
             font-size: 1.5rem;
         }
-    
-    #skill{
-        height: 350px;
+
+    #skill button{
+        font-size: 0.8rem;
     }
-        #skill button{
-            margin: 0px;
-            border-radius: 50%;
-            font-size: 0.8rem;
-        }
-        .active{
+    .active{
+        font-size: 1rem;
+    }
+
+    #about img{
+        width: 40%;
+    }
+    #about p{
+        font-size: 1.5rem;
+    }
+        #about p span{
             font-size: 1rem;
         }
-
-        #about img{
-            width: 40%;
-        }
-        #about p{
-            font-size: 1.5rem;
-        }
-            #about p span{
-                font-size: 1rem;
-            }
     #detail{
         font-size: 1rem;
     }
     
-    #benefit{
-        height: 450px;
-    }
         #benefit div{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
             #benefit div img{
                 width:60%;
