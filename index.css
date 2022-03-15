@@ -20,11 +20,13 @@ header{
     position: sticky;
     top:0;
     transition: 0.5s;
-    background-color: rgba(85, 107, 47, 1);
+    background-color: rgba(85, 107, 47);
+    opacity: 0.7;
 }
 .headerBColor{
     background-color: darkolivegreen;
     padding: 2.5%;
+    opacity: 1;
 }
     .header{
         display: inline-block;
@@ -33,21 +35,9 @@ header{
     .header:hover{
         transform: scale(1.05);
     }
-    /* .header a{
-        color: ghostwhite;
-        text-decoration: none;
-        transition: 0.5s;
-    }
-        .header a:hover{
-            color: lightgreen;
-            font-weight: bold;
-        } */
     .header a img{
         width: 80%;
     }
-    /* .header a span{
-        font-size: 3rem;
-    } */
 
     .menubar{
         display: inline-block;
@@ -233,9 +223,6 @@ footer{
 
 /* responsive */
 @media all and (max-width:1024px){
-    .header a span{
-        font-size: 2.5rem;
-    }
     .menubar a{
         padding: 2%;
         font-size: 1.3rem;
@@ -290,9 +277,6 @@ footer{
 }
 
 @media all and (max-width:768px){
-    .header a span{
-        font-size: 1.8rem;
-    }
     .menubar a{
         font-size: 1.2rem;
     }
@@ -366,9 +350,6 @@ footer{
 }
 
 @media all and (max-width:480px){
-    .header a span{
-        font-size: 1.7rem;
-    }
     .menubar a{
         font-size: 1.1rem;
     }
