@@ -41,7 +41,7 @@ $(function(){
         }
     }
 
-    // detail
+    // detail 슬라이드
     function ShowDetail(){
         $detail1.children("span").stop().slideDown(1000);
         $detail2.children("span").stop().slideDown(1000);
@@ -112,7 +112,7 @@ $(function(){
         moveSlide(currentIndex)
     }
 
-    //Responsive menu
+    //Responsive accodian menu
     $(window).resize(function(){
         var width = $(window).width();
         if (width<1024){
