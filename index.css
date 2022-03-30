@@ -214,6 +214,7 @@ footer{
 #menu{
     display:none;
     overflow: hidden;
+    border: 1px solid darkgreen;
     border-radius: 30%;
     background-color: ghostwhite;
     margin-right: 3%;
