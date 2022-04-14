@@ -8,6 +8,9 @@ html,body{
     background: url(./img/cloud2.jpg) no-repeat;
     background-size: cover;
 }
+html::-webkit-scrollbar{
+    display: none;
+}
 
 /* header */
 header{
@@ -15,7 +18,7 @@ header{
     align-items: center;
     justify-content: space-between;
     margin:0;
-    padding: 0.5%;
+    padding: 0.5% 5%;
     box-sizing: border-box;
     position: sticky;
     top:0;
@@ -25,7 +28,7 @@ header{
 }
 .headerBColor{
     background-color: darkolivegreen;
-    padding: 2.5%;
+    padding: 2.5% 4%;
     opacity: 1;
 }
     .header{
@@ -46,6 +49,7 @@ header{
         padding-right: 1%;
     }
         .menubar a{
+            display: inline-block;
             padding: 3%;
             color: ghostwhite;
             font-size: 1.3rem;
@@ -58,13 +62,12 @@ header{
 .main{
     text-align: center;
     background: url(./img/cat.png) no-repeat;
-    background-position: center 25%, 90%;
+    background-position: center 75%, 90%;
     background-size: 80%;
-    padding-top: 10%;
-    padding-bottom: 30%;
+    padding: 5% 10% 30%;
 }
     .main div{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .main div span{
         font-size: 2rem;
@@ -76,7 +79,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(240, 255, 249);
-    padding: 25% 5% 25% 5%;
+    padding: 25% 10%;
 }
     #skill div{
         width:10%;
@@ -113,8 +116,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding: 15% 10%;
 }
     #about img{
         display: inline-block;
@@ -124,7 +126,7 @@ header{
     #about p{
         display: inline-block;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
     }
         #about p span{
             font-size: 1.8rem;
@@ -142,8 +144,7 @@ header{
     text-align: center;
     background-color: rgb(240, 255, 249);
     width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5% auto;
     height: 700px;
 }
     #detail_img1{
@@ -171,9 +172,7 @@ header{
     background-color: rgb(240, 255, 249);
     display: block;
     text-align: center;
-    width: 100%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding: 10% 5%;
 }
     #benefit h2{
         margin:0;
@@ -195,13 +194,13 @@ header{
 /* footer */
 footer{
     background-color: rgb(240, 255, 249);
-    padding: 2%;
+    padding: 2% 5%;
 }
 #footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3% 5% 1% 5%;
+    margin: 3% 5% 1%;
     text-align: left;
     color: rgba(0, 0, 0, 0.8);
     font-size: 1rem;
@@ -212,12 +211,13 @@ footer{
 
 /* 모바일 메뉴창 */
 #menu{
-    display:none;
+    display: none;
     overflow: hidden;
     border: 1px solid darkgreen;
-    border-radius: 30%;
+    border-radius: 1rem;
     background-color: ghostwhite;
-    margin-right: 3%;
+    font-size: 1.3rem;
+    margin: 3%;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -232,7 +232,7 @@ footer{
         font-size: 1.3rem;
     }
     .main div{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .main div span{
         font-size: 1.5rem;
@@ -245,7 +245,7 @@ footer{
         padding-left: 3%;
     }
     #about p{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
         #about p span{
             font-size: 1.3rem;
@@ -254,10 +254,10 @@ footer{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(2, 50%);
-        font-size: 2.5rem;
         width: 100%;
         height: 950px;
         padding-bottom: 10%;
+        font-size: 1.5rem;
     }
         #detail_img1{
             padding: 0;
@@ -270,7 +270,6 @@ footer{
     #benefit div{
         grid-template-columns: repeat(2,50%);
         grid-template-rows: repeat(2,50%);
-        font-size: 1.6rem;
     }
         #benefit div span{
             margin-bottom: 5%;
@@ -290,7 +289,7 @@ footer{
         padding-bottom: 30%;
     }
         .main div{
-            font-size: 3rem;
+            font-size: 2rem;
         }
             .main div span{
                 font-size: 1.3rem;
@@ -329,7 +328,6 @@ footer{
                 font-size: 1.3rem;
             }
     #detail{
-        font-size: 1.5rem;
         height: 800px;
     }
     footer{
@@ -349,7 +347,7 @@ footer{
         margin-bottom: 5%;
     }
     #benefit div{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -363,9 +361,6 @@ footer{
         padding-top: 20%;
         padding-bottom: 50%;
     }
-        .main div{
-            font-size: 3rem;
-        }
         .main div span{
             font-size: 1.5rem;
         }
