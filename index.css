@@ -5,8 +5,8 @@
 html,body{
     margin:0;
     padding:0;
-    background: url(./img/cloud2.jpg) no-repeat;
-    background-size: cover;
+    background: url(./img/colorful.jpg) no-repeat;
+    background-size: contain;
 }
 html::-webkit-scrollbar{
     display: none;
