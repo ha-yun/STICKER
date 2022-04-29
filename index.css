@@ -26,6 +26,7 @@ header{
     transition: 0.5s;
     background-color: rgb(85, 107, 47);
     opacity: 0.7;
+    z-index: 100;
 }
 .headerBColor{
     background-color: darkolivegreen;
@@ -65,7 +66,7 @@ header{
     background: url(./img/cat.png) no-repeat;
     background-position: center 75%, 90%;
     background-size: 80%;
-    padding: 5% 10% 30%;
+    padding: 13% 10% 30%;
 }
     .main div{
         font-size: 4rem;
@@ -123,6 +124,13 @@ header{
         display: inline-block;
         width: 40%;
         padding-left: 5%;
+        animation: move 3s infinite linear;
+        transform: rotate(-2deg);
+    }
+    @keyframes move {
+        50%{
+            transform: rotate(2deg);
+        }
     }
     #about p{
         display: inline-block;
@@ -155,6 +163,8 @@ header{
         background: url(./img/cloud.jpg) no-repeat center;
         background-size: cover;
         color: black;
+        filter: brightness(80%);
+        animation: bright 5s infinite linear;
     }
     #detail_img1 span{
         padding: 0;
@@ -166,6 +176,13 @@ header{
         color: ghostwhite;
         background: url(./img/aurora.jpg) no-repeat center;
         background-size: cover;
+        filter: brightness(80%);
+        animation: bright 5s infinite linear;
+    }
+    @keyframes bright{
+        50%{
+            filter: brightness(120%);
+        }
     }
 
 /* benefit */
@@ -190,6 +207,7 @@ header{
     }
     #benefit div img{
         width: 50%;
+        transition: 0.5s;
     }
     #benefit div img:hover{
         transform: scale(1.1);
@@ -290,7 +308,8 @@ footer{
     }
     .main{
         background-size: 90%;
-        padding-top: 10%;
+        background-position: center 28%, 90%;
+        padding-top: 17%;
         padding-bottom: 30%;
     }
         .main div{
