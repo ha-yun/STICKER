@@ -190,6 +190,10 @@ header{
     #benefit div img{
         width: 50%;
     }
+    #benefit div img:hover{
+        transform: scale(1.1);
+        filter: brightness(120%)
+    }
 
 /* footer */
 footer{
