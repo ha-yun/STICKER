@@ -6,7 +6,8 @@ html,body{
     margin:0;
     padding:0;
     background: url(./img/colorful.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
 }
 html::-webkit-scrollbar{
     display: none;
